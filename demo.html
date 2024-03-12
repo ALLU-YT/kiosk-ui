@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include Mobiscroll CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@mobiscroll/pro-core@5.7.4/css/mobiscroll.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="inline-picker"></div>
+
+    <!-- Include Mobiscroll JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@mobiscroll/pro-4/js/mobiscroll.jquery.min.js"></script>
+
+    <script>
+        // Run the jQuery code after the DOM is fully loaded
+        $(document).ready(function() {
+            $('#inline-picker').mobiscroll().datepicker({
+                controls: ['calendar'],
+                display: 'inline',
+                touchUi: false
+            });
+        });
+    </script>
+</body>
+
+</html>
